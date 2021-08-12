@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock title %}
+{% block body %}
+<div class="container">
+    <form action="/" method="POST">
+        <div class="my-3">
+        <label for="array" class="form-label">
+            <h5 class="display-7 text-dark">Enter an array</h5>
+        </label>
+        <input type="text" class="form-control" id="array" name="array" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text text-danger">Please don't include characters or float values</div>
+        </div>
+        <header class="text-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </header>
+    </form>
+</div>
+{% if ans_array %}
+<div class="container my-3"><h3 class="display-6"><span class="badge bg-success">Result</span></h3></div>
+
+<div class="container my-3">
+{% for array in ans_array %}
+    {% if array == "-" %}
+    <p class="lead" style="color: blue;">Pass</p>
+    {% else %}
+    <h4 class="display-6">{{array}}</h4>   
+    {% endif %}
+{% endfor %}
+</div>
+
+<div class="container my-5">
+        <p class="lead" style="color:green">Each pass of Bottom-up Merge Sort has been displayed :)</p>
+        <p style="color: blue;">blocks being compared{<br>
+        blocks being sorted(</p> 
+       
+{% else %}
+<div class="container my-3">
+    <h4 class="display-6 text-secondary">Waiting for input...</h4>
+</div>
+
+{% endif %}
+{% endblock body %}
