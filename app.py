@@ -91,7 +91,7 @@ def hello_world():
         try:
             int_array = [int(x) for x in input_string.split()]
             if len(int_array) == 1:
-                ans_array = ["{1}", "(1)"]
+                ans_array = ["{" + str(int_array[0]) + '}', "(" + str(int_array[0]) + ')']
             else:
                 ans_array = mergeSort(int_array)
         except:
