@@ -11,6 +11,8 @@ front-end using html, css and bootstrap.
 ## Output
 ![image](https://user-images.githubusercontent.com/55309127/129277466-88006da9-b430-4cce-88fc-65790a2f1807.png)
 
+## Demo
+https://visualizer-merge-sort.herokuapp.com/
 
 ## Getting Started
 
