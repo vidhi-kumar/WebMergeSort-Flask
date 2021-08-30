@@ -1,7 +1,7 @@
 # Bottom-up Merge Sort Visualizer
 
-Internal working of iterative merge sort is visualised for any integer list entered by the user.
-Each pass/iteration is displayed for better understanding of the algorithm.
+Internal working of iterative merge sort is visualized for any integer list entered by the user.
+Each pass/iteration is displayed for a better understanding of the algorithm.
 
 ## Description
 
